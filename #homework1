@@ -1,0 +1,19 @@
+package gui;
+
+import javax.swing.JOptionPane;
+public class Gui {
+
+   
+    public static void main(String[] args) {
+       String x = JOptionPane.showInputDialog("Enter an integer");
+       int number =Integer.parseInt(x);
+       if (number % 2 ==0)
+           JOptionPane.showMessageDialog(null, "That number is even");
+       else  JOptionPane.showMessageDialog(null, "That number is odd"); 
+       
+       int input =JOptionPane.showConfirmDialog(null,"Do another ?");
+            System.out.println(input);
+       
+       
+    
+    }
